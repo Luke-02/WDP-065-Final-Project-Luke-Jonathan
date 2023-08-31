@@ -112,7 +112,7 @@ h1 {
   .tags-section {
     border: 1px solid #ccc;
     padding: 15px;
-    background-color: #f8f8f8;
+    background-image: url(images/marble\ texture.jpg);
   }
   
   .tags-list {
@@ -143,7 +143,7 @@ h1 {
   .categories-archive {
     border: 1px solid #ccc;
     padding: 15px;
-    background-color: #f8f8f8;
+    background-image: url(images/marble\ texture.jpg);
   }
   
   .categories-archive-list {
@@ -243,5 +243,28 @@ h1 {
 
 .carousel-inner img {
   width: 100%; /* Make sure the image covers the container */
+}
+
+/*portfolio card body*/
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  max-height: 5%;
+  max-width: 30%;
+  background-color: aqua;
+  border-radius: 8px;
+  margin-right: 10px; /* Add some right margin between the cards */
+  margin-bottom: 10px; /* Add some bottom margin between the cards */
+}
+
+.portfolio-card-img-top {
+  flex: 1; /* Grow to fill available space */
+  object-fit: cover; /* Maintain image aspect ratio while covering */
+  border-radius: 8px 8px 0 0;
+}
+
+.portfolio-card-body {
+  flex: 0 0 auto; /* Do not grow or shrink, maintain its natural size */
+  padding: 20px;
 }
   

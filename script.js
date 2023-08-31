@@ -9,22 +9,22 @@ $(document).ready(function () {
 
 // JavaScript to dynamically populate items
 const items = [
-  { title: "Item 1", category: "website", image: "image1.jpg" },
-  { title: "Item 2", category: "app-design", image: "image2.jpg" },
-  { title: "Item 3", category: "website" },
-  { title: "Item 4", category: "website" },
-  { title: "Item 5", category: "app-design" },
-  { title: "Item 6", category: "app-design" },
+  { title: "Job Filtering Webpage", category: "website", image: "images/portfolio/job-filtering-webpage.png" },
+  { title: "Item 2", category: "app-design", image: "images/portfolio/simple login signup page .png" },
+  { title: "Item 3", category: "website", image: "images/portfolio/tailwind design login screen.png" },
+  { title: "Item 4", category: "website", image: "images/portfolio/simple login signup page .png" },
+  { title: "Item 5", category: "app-design", image: "images/portfolio/simple login signup page .png" },
+  { title: "Item 6", category: "app-design", image: "images/portfolio/simple login signup page .png" },
   // Add more items here
 ];
 
 items.forEach(item => {
   const card = `
-  <div class="card">
-    <img class="card-img-top" src="${item.image}" alt="Card image">
-    <div class="card-body">
-      <h5 class="card-title">${item.title}</h5>
-      <p class="card-text">${item.category}</p>
+  <div class="portfolio-card">
+    <img class="portfolio-card-img-top" src="${item.image}" alt="Card image">
+    <div class="portfolio-card-body">
+      <h5 class="portfolio-card-title">${item.title}</h5>
+      <p class="portfolio-card-text">${item.category}</p>
     </div>
   </div>
   `;
