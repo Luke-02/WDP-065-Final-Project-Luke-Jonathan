@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Company Name] - Company Profile</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Add the Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Your Brand</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item" style="margin-right: 50px;">
+            <a class="nav-link" href="todos.html">Todos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      
+
+    </header>
+    
+    <section id="todos">
+      <div class="card p-4" style="width: 700px; min-height: 400px; background-color: #F6BE00;">
+        <img src="images/todos/clipart130494.png" alt="Thumbtack" style="height: 50px; width: 50px; vertical-align: middle; margin-right: 10px;">
+        <h1 class="card-title">Todos</h1>
+        <input type="text" id="taskInput" class="form-control mb-2" placeholder="Enter a new task" style="width: 100%;">
+        <button id="addTaskButton" class="btn btn-primary mb-2" style="width: 100%;">Add Task</button>
+        <ul id="taskList" class="list-group"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+</body>
+</html>

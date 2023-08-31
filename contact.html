@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Company Name] - Company Profile</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Add the Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Your Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="todos.html">Todos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <br>
+
+  <main>
+    <section id="contact-us" style="background-color: #007aff;">
+        <h1>Contact Us</h1>
+    </section>
+
+    <!--map section-->
+    <section class="map">
+        <div id="map">
+            <!-- Embed a map from a service like Google Maps here -->
+            <!-- Replace the iframe tag with the appropriate map embed code -->
+            <iframe src="https://www.google.com/maps/d/embed?mid=1pRr96dk8bzZtAoXcOJjjIJXcmjU&hl=en_US&ehbc=2E312F"
+                    width="100%" 
+                    height="550" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="data-and-message" style="background-color: #AB8ECD;">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div id="contact-info" class="py-4">
+                  <h2>Contact Information</h2>
+                  <p><i class="fas fa-map-marker-alt"></i> Address: Jakarta Barat, Indonesia</p>
+                  <p><i class="fas fa-envelope"></i> Email: random.generator@email.com</p>
+                  <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div id="send-message" class="py-4">
+                  <h2>Send us a Message</h2>
+                  <form id="message-form">
+                    <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                      </div>
+                    </div>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- Other sections (Contact Us, About Us) go here -->
+        <div class="company-section">
+            <div class="column about-us">
+              <h2>About Us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida ex ut varius. Nullam laoreet libero sit amet quam consectetur, nec rhoncus tellus malesuada.</p>
+            </div>
+            <div class="column trending-content">
+              <h2>Trending Content</h2>
+              <ul>
+                <li><a href="#">Lorem Ipsum Article 1</a></li>
+                <li><a href="#">Lorem Ipsum Article 2</a></li>
+                <li><a href="#">Lorem Ipsum Article 3</a></li>
+              </ul>
+            </div>
+            <div class="column contact-us">
+              <h2>Contact Us</h2>
+              <p>If you have any questions or inquiries, feel free to contact us:</p>
+              <p><i class="fas fa-map-marker-alt"></i> Address: Jakarta Barat, Indonesia</p>
+              <p><i class="fas fa-envelope"></i> Email: random.generator@email.com</p>
+              <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+            </div>
+          </div>
+    </section>
+    
+    
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+</body>
+</html>

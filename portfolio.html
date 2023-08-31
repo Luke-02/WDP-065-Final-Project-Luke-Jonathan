@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Filter</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Add the Font Awesome CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Your Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item" style="margin-right: 50px;">
+                  <a class="nav-link" href="todos.html">Todos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+<main>
+    <section>
+
+    </section>
+
+
+  <div class="container mt-5">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#all">All</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#website">Website</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#appdesign">App Design</a>
+      </li>
+      <!-- Add more categories as needed -->
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content mt-3">
+      <div id="all" class="tab-pane fade show active">
+        <!-- All items content here -->
+        <div class="card-deck" id="all-items">
+          <!-- Dynamic content will be added here -->
+        </div>
+      </div>
+      <div id="website" class="tab-pane fade">
+        <!-- Category 1 content here -->
+        <div class="card-deck" id="website-items">
+          <!-- Dynamic content will be added here -->
+        </div>
+      </div>
+      <div id="appdesign" class="tab-pane fade">
+        <!-- Category 2 content here -->
+        <div class="card-deck" id="app-design-items">
+          <!-- Dynamic content will be added here -->
+        </div>
+      </div>
+      <!-- Add more category content as needed -->
+    </div>
+  </div>
+
+
+  <!-- Other sections (Contact Us, About Us) go here -->
+  <br>
+  <div class="company-section">
+      <div class="column about-us">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida ex ut varius. Nullam laoreet libero sit amet quam consectetur, nec rhoncus tellus malesuada.</p>
+      </div>
+      <div class="column trending-content">
+        <h2>Trending Content</h2>
+        <ul>
+          <li><a href="#">Lorem Ipsum Article 1</a></li>
+          <li><a href="#">Lorem Ipsum Article 2</a></li>
+          <li><a href="#">Lorem Ipsum Article 3</a></li>
+        </ul>
+      </div>
+      <div class="column contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to contact us:</p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: Jakarta Barat, Indonesia</p>
+        <p><i class="fas fa-envelope"></i> Email: random.generator@email.com</p>
+        <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+      </div>
+    </div>
+  
+  
+</main>
+
+<footer>
+  <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
+</footer>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your custom script -->
+  <script src="script.js"></script>
+  <br>
+
+  
+</body>
+</html>
