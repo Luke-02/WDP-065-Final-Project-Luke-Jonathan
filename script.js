@@ -10,11 +10,11 @@ $(document).ready(function () {
 // JavaScript to dynamically populate items
 const items = [
   { title: "Job Filtering Webpage", category: "website", image: "images/portfolio/job-filtering-webpage.png" },
-  { title: "Item 2", category: "app-design", image: "images/portfolio/simple login signup page .png" },
-  { title: "Item 3", category: "website", image: "images/portfolio/tailwind design login screen.png" },
-  { title: "Item 4", category: "website", image: "images/portfolio/simple login signup page .png" },
-  { title: "Item 5", category: "app-design", image: "images/portfolio/simple login signup page .png" },
-  { title: "Item 6", category: "app-design", image: "images/portfolio/simple login signup page .png" },
+  { title: "Login & signup app", category: "app-design", image: "images/portfolio/simple login signup page .png" },
+  { title: "Login Webpage", category: "website", image: "images/portfolio/tailwind design login screen.png" },
+  { title: "Login & signup app", category: "website", image: "images/portfolio/simple login signup page .png" },
+  { title: "Login & signup app", category: "app-design", image: "images/portfolio/simple login signup page .png" },
+  { title: "Login & signup app", category: "app-design", image: "images/portfolio/simple login signup page .png" },
   // Add more items here
 ];
 
@@ -44,70 +44,7 @@ items.forEach(item => {
 });
 
 
-//todos
-const taskInput = document.getElementById('taskInput');
-  const addTaskButton = document.getElementById('addTaskButton');
-  const taskList = document.getElementById('taskList');
 
-  // Load tasks from Local Storage
-  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-
-  function updateLocalStorage() {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }
-
-  function renderTasks() {
-    taskList.innerHTML = '';
-  
-    for (let index = 0; index < tasks.length; index++) {
-      const task = tasks[index];
-  
-      const li = document.createElement('li');
-      li.classList.add('list-group-item');
-  
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
-      checkbox.checked = task.completed;
-      checkbox.addEventListener('change', () => toggleTaskCompletion(index));
-  
-      const deleteIcon = document.createElement('i');
-      deleteIcon.classList.add('fas', 'fa-trash', 'delete-icon'); // Add classes for the trash icon
-      deleteIcon.addEventListener('click', () => deleteTask(index));
-  
-      li.textContent = task.description;
-      li.prepend(checkbox);
-      li.appendChild(deleteIcon);
-  
-      li.classList.toggle('completed', task.completed);
-  
-      taskList.appendChild(li);
-    }
-    updateLocalStorage();
-  }
-  
-
-  function toggleTaskCompletion(index) {
-    tasks[index].completed = !tasks[index].completed;
-    renderTasks();
-  }
-
-  //delete task
-  function deleteTask(index) {
-    tasks.splice(index, 1);
-    renderTasks();
-  }
-
-  //add task
-    addTaskButton.addEventListener('click', () => {
-      const description = taskInput.value.trim();
-      if (description !== '') {
-        tasks.push({ description, completed: false });
-        taskInput.value = '';
-        renderTasks();
-      }
-    });
-
-    renderTasks();
 
   
 

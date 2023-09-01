@@ -61,6 +61,73 @@
     <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
   </footer>
 
+  <script>
+    //todos
+  const taskInput = document.getElementById('taskInput');
+  const addTaskButton = document.getElementById('addTaskButton');
+  const taskList = document.getElementById('taskList');
+
+  // Load tasks from Local Storage
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+  function updateLocalStorage() {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
+
+  function renderTasks() {
+    taskList.innerHTML = '';
+  
+    for (let index = 0; index < tasks.length; index++) {
+      const task = tasks[index];
+  
+      const li = document.createElement('li');
+      li.classList.add('list-group-item');
+  
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.checked = task.completed;
+      checkbox.addEventListener('change', () => toggleTaskCompletion(index));
+  
+      const deleteIcon = document.createElement('i');
+      deleteIcon.classList.add('fas', 'fa-trash', 'delete-icon'); // Add classes for the trash icon
+      deleteIcon.addEventListener('click', () => deleteTask(index));
+  
+      li.textContent = task.description;
+      li.prepend(checkbox);
+      li.appendChild(deleteIcon);
+  
+      li.classList.toggle('completed', task.completed);
+  
+      taskList.appendChild(li);
+    }
+    updateLocalStorage();
+  }
+  
+
+  function toggleTaskCompletion(index) {
+    tasks[index].completed = !tasks[index].completed;
+    renderTasks();
+  }
+
+  //delete task
+  function deleteTask(index) {
+    tasks.splice(index, 1);
+    renderTasks();
+  }
+
+  //add task
+    addTaskButton.addEventListener('click', () => {
+      const description = taskInput.value.trim();
+      if (description !== '') {
+        tasks.push({ description, completed: false });
+        taskInput.value = '';
+        renderTasks();
+      }
+    });
+
+    renderTasks();
+  </script>
+
 <script src="script.js"></script>  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
