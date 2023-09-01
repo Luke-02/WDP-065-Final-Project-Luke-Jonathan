@@ -268,3 +268,26 @@ h1 {
   padding: 20px;
 }
   
+/*about us*/
+/*meet the team*/
+.team-card {
+  text-align: center;
+}
+
+.rounded-circle {
+  width: 150px; /* Set your desired image width */
+  height: 150px; /* Set your desired image height */
+  border-radius: 50%; /* Make the image circular */
+  margin: 0 auto; /* Center the image horizontally */
+  overflow: hidden; /* Hide the parts of the image outside the circle */
+  border: 3px solid yellow; /* Add a yellow border */
+}
+
+.team-card-body {
+  margin-top: 10px;
+  border: 2px solid #00FF00; /* Add a yellow border around the content */
+  padding: 5px; /* Add padding to create space around the content */
+  margin-bottom: 10px;
+}
+
+
