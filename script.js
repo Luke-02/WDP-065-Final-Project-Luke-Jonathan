@@ -24,7 +24,7 @@ items.forEach(item => {
     <img class="portfolio-card-img-top" src="${item.image}" alt="Card image">
     <div class="portfolio-card-body">
       <h5 class="portfolio-card-title">${item.title}</h5>
-      <p class="portfolio-card-text">${item.category}</p>
+      <!--p class="portfolio-card-text">${item.category}</p-->
     </div>
   </div>
   `;
@@ -44,37 +44,33 @@ items.forEach(item => {
 });
 
 
+//for the message section that was part of the contact us page
+const messageForm = document.getElementById("message-form");
 
+      messageForm.addEventListener("submit", function(event) {
+          event.preventDefault();
 
-  
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const contactNumber = document.getElementById("contact-number").value;
+          const message = document.getElementById("message").value;
 
-  //for the message section that was part of the contact us page
-  const messageForm = document.getElementById("message-form");
+          const messageData = {
+              name: name,
+              email: email,
+              contactNumber: contactNumber,
+              message: message
+          };
 
-        messageForm.addEventListener("submit", function(event) {
-            event.preventDefault();
+          // Store the message data in local storage
+          localStorage.setItem("contactMessage", JSON.stringify(messageData));
 
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const contactNumber = document.getElementById("contact-number").value;
-            const message = document.getElementById("message").value;
+          // Optionally, you can provide feedback to the user that the message has been sent or saved.
 
-            const messageData = {
-                name: name,
-                email: email,
-                contactNumber: contactNumber,
-                message: message
-            };
+          // Reset the form
+          messageForm.reset();
+      });
 
-            // Store the message data in local storage
-            localStorage.setItem("contactMessage", JSON.stringify(messageData));
-
-            // Optionally, you can provide feedback to the user that the message has been sent or saved.
-
-            // Reset the form
-            messageForm.reset();
-        });
-  
 
 
 //blog
