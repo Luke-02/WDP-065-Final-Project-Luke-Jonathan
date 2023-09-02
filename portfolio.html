@@ -43,12 +43,18 @@
     </header>
 
 <main>
-  <section id="portfolio" style="background-image: url(images/marble\ texture.jpg)">
-    <h1>Portfolio</h1>
+  <section class="shared-section" style="background-image: url(images/marble\ texture.jpg)">
+    <div class="container-heading-design">
+      <h1>Portfolio</h1>
+    </div>
   </section>
   <section id="portfolio-slogan" style="background-color: turquoise;">
-    <h1>We Create Creative & quality Designs</h1>
-    <p>whom specialized in exceptional services designed to exceed your expectations.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
+        <h1>We Create Creative & quality Designs</h1>
+        <p>whom specialized in exceptional services designed to exceed your expectations.</p>
+      </div>
+    </div>
   </section>
 
 
@@ -93,28 +99,44 @@
 
 
   <!-- Other sections (Contact Us, About Us) go here -->
-  <br>
   <div class="company-section">
-      <div class="column about-us">
+    <div class="column about-us">
         <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida ex ut varius. Nullam laoreet libero sit amet quam consectetur, nec rhoncus tellus malesuada.</p>
-      </div>
-      <div class="column trending-content">
+    </div>
+    <div class="column trending-content">
         <h2>Trending Content</h2>
-        <ul>
-          <li><a href="#">Lorem Ipsum Article 1</a></li>
-          <li><a href="#">Lorem Ipsum Article 2</a></li>
-          <li><a href="#">Lorem Ipsum Article 3</a></li>
+        <ul class="social-icons-list">
+            <li><a href="#"><i class="fab fa-twitter"></i> Lorem Ipsum Article 1</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Lorem Ipsum Article 2</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Lorem Ipsum Article 3</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Lorem Ipsum Article 1</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Lorem Ipsum Article 2</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Lorem Ipsum Article 3</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Lorem Ipsum Article 1</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Lorem Ipsum Article 2</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Lorem Ipsum Article 3</a></li>
+        </ul>
+    </div>
+    <div class="column contact-us">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries, feel free to contact us:</p>
+      <p><i class="fas fa-map-marker-alt"></i> Address: Jakarta Barat, Indonesia</p>
+      <p><i class="fas fa-envelope"></i> Email: random.generator@email.com</p>
+      <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+      
+      <br>
+      <!-- Add "Follow Us" information in the same column as "Contact Us" -->
+      <div class="follow-us-container">
+        <h2>Follow Us</h2>
+        <ul class="social-icons-list-horizontal">
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
         </ul>
       </div>
-      <div class="column contact-us">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, feel free to contact us:</p>
-        <p><i class="fas fa-map-marker-alt"></i> Address: Jakarta Barat, Indonesia</p>
-        <p><i class="fas fa-envelope"></i> Email: random.generator@email.com</p>
-        <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
-      </div>
     </div>
+  </div>
   
   
 </main>
@@ -129,9 +151,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Your custom script -->
   <script src="script.js"></script>
-  
-  <br>
-
   
 </body>
 </html>

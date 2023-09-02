@@ -7,13 +7,15 @@ body {
   .company-section {
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    
   }
   .column {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
   }
+
+  /*section below every page*/
   .about-us {
     background-color: #f0f0f0;
   }
@@ -23,7 +25,26 @@ body {
   }
   .contact-us {
     background-color: #d0d0d0;
+    position: relative; /* Add relative positioning */
   }
+
+  .follow-us-container{
+    background-color: #e0e0e0;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 100%;
+  }
+
+  .social-icons-list-horizontal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Optional: Center the icons horizontally */
+}
+
+.social-icons-list-horizontal li {
+    margin: 0 10px; /* Optional: Add spacing between icons */
+}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -37,6 +58,9 @@ body {
   }
 }
 
+.justify-text {
+  text-align: justify;
+}
 
   .creative-section {
     text-align: center;
@@ -290,4 +314,42 @@ h1 {
   margin-bottom: 10px;
 }
 
+.team-card-title {
+  color: yellow;
+}
 
+.team-card-text {
+  color: yellow;
+}
+
+/*shared-section for all headings*/
+.shared-section {
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  text-align: center; /* Center the text horizontally */
+  padding: 90px 0; /* Add padding for spacing */
+}
+
+.container-heading-design {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  display: inline-block; /* Make the container only as wide as its content */
+  padding: 10px; /* Add padding to the container */
+  border-radius: 10px; /* Add rounded corners to the container */
+}
+
+.container-heading-design h1 {
+  color: gold; /* Text color inside the container */
+  margin: 0; /* Remove default margin for the heading */
+}
+
+.container-side-heading-design {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  display: inline-block; /* Make the container only as wide as its content */
+  padding: 10px; /* Add padding to the container */
+  border-radius: 10px; /* Add rounded corners to the container */
+}
+
+.container-side-heading-design h2 {
+  color: gold; /* Text color inside the container */
+  margin: 0; /* Remove default margin for the heading */
+}
