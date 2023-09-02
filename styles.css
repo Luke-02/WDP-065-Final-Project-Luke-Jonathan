@@ -327,7 +327,7 @@ h1 {
   background-size: cover; /* Ensure the background image covers the entire section */
   background-position: center; /* Center the background image */
   text-align: center; /* Center the text horizontally */
-  padding: 90px 0; /* Add padding for spacing */
+  padding: 50px 0; /* Add padding for spacing */
 }
 
 .container-heading-design {
