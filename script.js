@@ -44,32 +44,34 @@ items.forEach(item => {
 });
 
 
-//for the message section that was part of the contact us page
+// Select the message form by its ID
 const messageForm = document.getElementById("message-form");
 
-      messageForm.addEventListener("submit", function(event) {
-          event.preventDefault();
+messageForm.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const contactNumber = document.getElementById("contact-number").value;
-          const message = document.getElementById("message").value;
+    // Get values from input fields
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
 
-          const messageData = {
-              name: name,
-              email: email,
-              contactNumber: contactNumber,
-              message: message
-          };
+    // Create an object to store the message data
+    const messageData = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    };
 
-          // Store the message data in local storage
-          localStorage.setItem("contactMessage", JSON.stringify(messageData));
+    // Store the message data in local storage
+    localStorage.setItem("contactMessage", JSON.stringify(messageData));
 
-          // Optionally, you can provide feedback to the user that the message has been sent or saved.
+    // Optionally, provide feedback to the user that the message has been sent or saved.
 
-          // Reset the form
-          messageForm.reset();
-      });
+    // Reset the form
+    messageForm.reset();
+});
 
 
 
