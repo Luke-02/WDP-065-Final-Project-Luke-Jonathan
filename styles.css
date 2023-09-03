@@ -15,9 +15,9 @@ th {
 }
 
 /* Custom CSS for highlighting the active link */
-.active-link {
+.active-nav-item {
   background-color: orange;
-  color: white; /* Change text color for better contrast */
+  color: white; /* You can adjust the text color as needed */
 }
 
 /*for the the rest of the body*/

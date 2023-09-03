@@ -99,19 +99,21 @@ $grid.imagesLoaded().progress( function() {
 
 //navigation bar
 // Get the current URL path
-var currentPath = window.location.pathname;
+var path = window.location.pathname;
 
-// Select all navigation links with the "nav-link" class
-var navLinks = document.querySelectorAll('.nav-link');
+// Extract the filename from the URL path
+var page = path.split("/").pop();
 
-// Loop through each navigation link
-navLinks.forEach(function(link) {
-  // Check if the link's href matches the current URL path
-  if (link.getAttribute('href') === currentPath) {
-    // Add a class to highlight the active link (e.g., "active-link")
-    link.classList.add('active-link');
+// Get all the navigation links
+var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+// Loop through the navigation links and add the "active-nav-item" class to the active one
+for (var i = 0; i < navLinks.length; i++) {
+  // Check if the href attribute of the link matches the current page
+  if (navLinks[i].getAttribute("href") === page) {
+    navLinks[i].parentNode.classList.add("active-nav-item");
   }
-});
+}
 
 
 
