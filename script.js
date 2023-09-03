@@ -97,6 +97,22 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
 
+//navigation bar
+// Get the current URL path
+var currentPath = window.location.pathname;
+
+// Select all navigation links with the "nav-link" class
+var navLinks = document.querySelectorAll('.nav-link');
+
+// Loop through each navigation link
+navLinks.forEach(function(link) {
+  // Check if the link's href matches the current URL path
+  if (link.getAttribute('href') === currentPath) {
+    // Add a class to highlight the active link (e.g., "active-link")
+    link.classList.add('active-link');
+  }
+});
+
 
 
 

@@ -2,6 +2,26 @@ th {
   background-color: yellow;
 }
 
+/*for the navigation bar*/
+
+.navbar-nav .nav-link {
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-top: 10px;
+}
+
+.navbar-brand img {
+  max-height: 10%; /* You can adjust this value */
+  max-width: 150px; /* Adjust the maximum width as needed */
+}
+
+/* Custom CSS for highlighting the active link */
+.active-link {
+  background-color: orange;
+  color: white; /* Change text color for better contrast */
+}
+
+/*for the the rest of the body*/
+
 body {
     font-family: "BentonSans", "Helvetica Neue", sans-serif;
     margin: 0;
@@ -37,6 +57,35 @@ body {
     padding: 20px; /* Adjust padding as needed */
     max-width: 100%;
   }
+
+  .about-us h2,
+  .trending-content h2,
+  .contact-us h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid red; /* Change the color here */
+    text-align: center;
+  }
+
+  .social-icons-list {
+    list-style: none;
+    padding-right: 20px;
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 0 40px; /* Add spacing between list items */
+}
+
+.social-icons-list li {
+  margin-bottom: 20px;
+}
+
+.social-icons-list i {
+  margin-bottom: 5px; /* Add space between icon and text */
+}
+
+.social-icons-list a {
+  display: block;
+}
 
   .social-icons-list-horizontal {
     list-style: none;
