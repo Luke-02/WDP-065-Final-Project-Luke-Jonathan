@@ -14,10 +14,15 @@ th {
   max-width: 150px; /* Adjust the maximum width as needed */
 }
 
-/* Custom CSS for highlighting the active link */
-.active-nav-item {
+/* CSS for the hover effect */
+.navbar-nav .nav-link {
+  transition: background-size 1.0s; /* Add a transition for smooth hover effect */
+}
+
+.navbar-nav .nav-link:hover {
   background-color: orange;
-  color: white; /* You can adjust the text color as needed */
+  color: white;
+  padding: 10px 20px; /* Adjust padding to control the size of the hover effect */
 }
 
 /*for the the rest of the body*/
@@ -344,6 +349,36 @@ h1 {
   flex: 0 0 auto; /* Do not grow or shrink, maintain its natural size */
   padding: 20px;
 }
+
+/* CSS for the fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Optional: You can add a slight vertical translation effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Optional: You can adjust the final position */
+  }
+}
+
+/* Apply the animation to the portfolio card and set a delay */
+.portfolio-card {
+  opacity: 0; /* Start with cards hidden */
+  animation: fade-in 0.5s ease-in-out forwards; /* Use "forwards" to keep the final state of the animation */
+}
+
+/* Apply a delay to each card */
+.portfolio-card:nth-child(1) {
+  animation-delay: 0.2s; /* Adjust the delay for each card */
+}
+
+.portfolio-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/* Add more nth-child rules for additional cards */
+
   
 /*about us*/
 /*meet the team*/

@@ -44,6 +44,7 @@ items.forEach(item => {
 });
 
 
+
 // Select the message form by its ID
 const messageForm = document.getElementById("message-form");
 
@@ -97,23 +98,6 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
 
-//navigation bar
-// Get the current URL path
-var path = window.location.pathname;
-
-// Extract the filename from the URL path
-var page = path.split("/").pop();
-
-// Get all the navigation links
-var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-// Loop through the navigation links and add the "active-nav-item" class to the active one
-for (var i = 0; i < navLinks.length; i++) {
-  // Check if the href attribute of the link matches the current page
-  if (navLinks[i].getAttribute("href") === page) {
-    navLinks[i].parentNode.classList.add("active-nav-item");
-  }
-}
 
 
 
