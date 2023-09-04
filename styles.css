@@ -25,6 +25,12 @@ th {
   padding: 10px 20px; /* Adjust padding to control the size of the hover effect */
 }
 
+.active-nav-item {
+  background-color: rgb(218, 147, 15);
+  border-bottom: 2px solid red; /* Change the color here */
+  color: white; /* You can adjust the text color as needed */
+}
+
 /*for the the rest of the body*/
 
 body {
