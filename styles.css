@@ -27,7 +27,7 @@ th {
 
 .active-nav-item {
   background-color: rgb(218, 147, 15);
-  border-bottom: 2px solid red; /* Change the color here */
+  border-bottom: 4px solid red; /* Change the color here */
   color: white; /* You can adjust the text color as needed */
 }
 
@@ -429,6 +429,8 @@ h1 {
   display: inline-block; /* Make the container only as wide as its content */
   padding: 10px; /* Add padding to the container */
   border-radius: 10px; /* Add rounded corners to the container */
+  border-bottom: 3px solid red; /* Change the color here */
+  border-left: 3px solid red; /* Change the color here */
 }
 
 .container-heading-design h1 {
