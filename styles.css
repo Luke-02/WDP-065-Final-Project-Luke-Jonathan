@@ -3,10 +3,25 @@ th {
 }
 
 /*for the navigation bar*/
+/* Custom CSS for adjusting navbar height */
+.navbar {
+  height: 90px; /* Adjust the height as needed */
+  /* Other styles for the navbar */
+}
 
 .navbar-nav .nav-link {
   font-size: 20px; /* Adjust the font size as needed */
   margin-top: 10px;
+}
+
+#myNavbar {
+  background-color:black; /* Replace #your-color with your desired background color */
+  /* Other styles for the navbar */
+}
+
+#myNavbar .navbar-nav .nav-link {
+  color: deepskyblue; /* Replace #your-text-color with your desired text color */
+  /* Other styles for the navigation links */
 }
 
 .navbar-brand img {
@@ -21,14 +36,14 @@ th {
 
 .navbar-nav .nav-link:hover {
   background-color: orange;
-  color: white;
+  color: deepskyblue;
   padding: 10px 20px; /* Adjust padding to control the size of the hover effect */
 }
 
 .active-nav-item {
   background-color: rgb(218, 147, 15);
-  border-bottom: 4px solid red; /* Change the color here */
-  color: white; /* You can adjust the text color as needed */
+  border-bottom: 5px solid red; /* Change the color here */
+  color: deepskyblue; /* You can adjust the text color as needed */
 }
 
 /*for the the rest of the body*/
